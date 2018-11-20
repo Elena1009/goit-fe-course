@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body {
+    width: 901px;
+    margin: auto; /* эта функция отцентрировала весь блок по центру страницы*/
+}
+
+nav {
+    list-style: none;
+    /* display: inline-block; */
+    /* text-align: center; */
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+a {
+    text-decoration: none;
+    color: #626262;
+    /* display: inline-block; */
+    /* text-align: center; */
+}
+
+a:hover {
+    color: #03a9f4;
+}
+.main-list {
+    text-align: center;
+}
+
+.main-list-item {
+    display: inline-block;
+    /* margin-bottom: 110px;
+    margin-right: 10%; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 15%;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+.picturer {
+    display: inline-block;
+    width: 46.61%;
+    margin-bottom: 110px;
+}
+
+div.picturer-right {
+    margin-left: 57px;
+}
+
+.category {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #b4ad9e;
+}
+
+.title {
+    margin-bottom: 45px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    color: #626262;
+}
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #626262;
+}
+button{
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    display: block;
+    height: 60px;
+    width: 165px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px; /*как поднять кнопку выше?*/
+}
