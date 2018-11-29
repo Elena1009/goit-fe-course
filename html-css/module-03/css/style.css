@@ -1,12 +1,21 @@
-*{
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
-}
-body {
+    outline: 1px solid red;
+} */
+.wrapper {
     width: 901px;
-    margin: auto; /* эта функция отцентрировала весь блок по центру страницы*/
+    margin: 0 auto; /* эта функция отцентрировала весь блок по центру страницы*/
 }
 
 nav {
@@ -19,20 +28,11 @@ nav {
     font-size: 14px;
     line-height: 24px;
 }
-a {
-    text-decoration: none;
-    color: #626262;
-    /* display: inline-block; */
-    /* text-align: center; */
-}
-
-a:hover {
-    color: #03a9f4;
-}
 .main-list {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
-
 .main-list-item {
     display: inline-block;
     /* margin-bottom: 110px;
@@ -42,19 +42,36 @@ a:hover {
     margin: auto;
     width: 15%;
 }
+.main-list-item a {
+    text-decoration: none;
+    color: #626262;
+    /* display: inline-block; */
+    /* text-align: center; */
+}
+a:hover {
+    color: #03a9f4;
+}
 
-img {
+/* img {
     margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+.wrapper-picturer {
+    margin-bottom: 110px;
 }
 
 .picturer {
     display: inline-block;
-    width: 46.61%;
-    margin-bottom: 110px;
+    /* width: 46.61%; */
+    width: 50%;
+    /* margin-bottom: 110px; */
 }
 
 div.picturer-right {
-    margin-left: 57px;
+    /* margin-left: 57px; */
+    width: calc(50% - 4px);
 }
 
 .category {
@@ -88,8 +105,8 @@ button{
     line-height: 24px;
     font-weight: 400;
     display: block;
-    height: 60px;
-    width: 165px;
+    /* height: 60px;
+    width: 165px; */
     text-align: center;
     margin: auto;
     margin-bottom: 20px; /*как поднять кнопку выше?*/
