@@ -2,51 +2,66 @@
 html {
     box-sizing: border-box;
 }
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: inherit;
-}
+} */
 /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 1px solid red;
 } */
-.wrapper {
-    width: 901px;
+header {
+    padding: 76px 8px;
+    width: 900px;
+    margin: 0 auto;
+}
+main {
+    width: 900px;
     margin: 0 auto; /* эта функция отцентрировала весь блок по центру страницы*/
+    padding: 10px; /* Зачем указывать падинг? И откуда именно 10рх*/
 }
 
-nav {
+/* nav {
     list-style: none;
-    /* display: inline-block; */
-    /* text-align: center; */
-    text-decoration: none; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     line-height: 24px;
-}
-.main-list {
+} */
+ul {
     text-align: center;
     margin: 0;
     padding: 0;
+    width: 900px;
 }
-.main-list-item {
+
+li {
     display: inline-block;
-    /* margin-bottom: 110px;
-    margin-right: 10%; */
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: auto;
-    width: 15%;
+    width: 15%; /* Это можно в процентах задать? Вы задавали на вебинара ширину 200рх? */
+    letter-spacing: 0;
+    margin-right: 10px;
 }
-.main-list-item a {
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    display:block;
+    padding: 10px 5px;
+    outline: none;
     text-decoration: none;
+    text-transform: uppercase;
     color: #626262;
-    /* display: inline-block; */
-    /* text-align: center; */
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 24px;
 }
 a:hover {
     color: #03a9f4;
@@ -58,37 +73,42 @@ a:hover {
     max-width: 100%;
     height: auto;
 } */
-.wrapper-picturer {
+section {
+    width: 900px;
     margin-bottom: 110px;
+    /* display: inline-block; */
+
 }
 
 .picturer {
     display: inline-block;
-    /* width: 46.61%; */
-    width: 50%;
-    /* margin-bottom: 110px; */
+    width: 420px;
+    margin-right: 56px;     /* 56рх чтобы влезло в ширину 900рх секции. */
 }
-
-div.picturer-right {
-    /* margin-left: 57px; */
-    width: calc(50% - 4px);
+.picturer:last-child {
+    margin-right: 0;
+}
+img {
+    display: block;
+    width: 420px;
+    height: 280px;
+    margin-bottom: 30px;
 }
 
 .category {
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
     font-weight: 300;
+    font-size: 14px;
     color: #b4ad9e;
 }
 
 .title {
-    margin-bottom: 45px;
+    margin: 0 0 30px 0;
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
     font-weight: 400;
-    color: #000000;
+    font-size: 30px;
     color: #626262;
 }
 p{
@@ -97,17 +117,21 @@ p{
     line-height: 24px;
     font-weight: 400;
     color: #626262;
+    margin: 0 0 30px 0;
 }
 button{
-    color: #626262;
+    display: block;
+    /* color: #626262; */
+    background-color: white;
     font-family: 'Playfair Display', serif;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 400;
-    display: block;
-    /* height: 60px;
-    width: 165px; */
+    height: 60px;
+    width: 165px;
     text-align: center;
     margin: auto;
-    margin-bottom: 20px; /*как поднять кнопку выше?*/
+}
+button:last-child {
+    margin-bottom: 0;
 }
