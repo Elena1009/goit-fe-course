@@ -1,0 +1,228 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    color: #555252;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+    /* background-color: rgb(88, 86, 163); */
+}
+.page-header {
+    margin-bottom: 104px;
+}
+
+nav {
+    padding: 38px 0px;
+}
+
+
+.site-logo {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #605e5e;
+    font-size: 30px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+.site-novigation {
+    float: right;
+    width: 490px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    list-style: none;
+    text-decoration: none;
+}
+
+.site-novigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #605e5e;
+}
+.site-novigation a:hover,
+.site-novigation a:focus {
+    color: #1abc9c;
+}
+.site-novigation li {
+    float: left;
+    /* display: inline-block; */
+}
+.site-novigation li:not(:last-child) {
+    margin-right: 25px;
+}
+
+h2{
+    position: relative;
+    margin: 0;
+    margin-bottom: 92px;
+    padding: 0;
+    padding-bottom: 30px;
+    color: #605e5e;
+    font-size: 48px;
+    /* line-height: 32px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-line{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 164px;
+    height: 8px;
+    background: #1abc9c;
+}
+
+.featured-list {
+    font-size: 0;
+}
+
+.featured-list-item{
+    float: left;
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom:30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.featured-list-item:nth-child(4n){
+    margin-right: 30px;
+}
+/* .featured-list-item:nth-child(4){
+    margin-right: 0;
+} */
+/* .featured-list-item:nth-child(8){
+    margin-right: 0;
+} */
+
+.featured-list-item:nth-last-child(-n + 4){
+    margin-bottom: 0;
+}
+.featured-list-item:nth-child(4n + 4){
+    margin-right: 0;
+}
+
+.featured-list-item:hover .featured-list-name,
+.featured-list-item:focus .featured-list-name{
+    color: #1abc9c;
+}
+.featured-list-item:hover .featured-list-price,
+.featured-list-item:focus .featured-list-price{
+    color: #1abc9c;
+}
+.featured-list-name{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+    width: 200px;
+    height: 40px;
+    background: #323232;
+    color: #fff;
+    border: none;
+}
+.featured-list-price{
+    float: right;
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    width: 55px;
+    height: 40px;
+    background: #8c8c8c;
+    color: #fff
+}
+.featured-list-price::before {
+    content: "$";
+}
+.gallery {
+    margin-bottom: 104px;
+}
+
+.blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.blog-list-item{
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+}
+.blog-list-item:nth-child(3){
+    margin-right: 0;
+}
+
+.blog-list-image{
+   max-width: 100%;
+}
+.blog-list-title {
+    color: #555252;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.blog-list-about {
+    color: #555252;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.blog-list-button{
+    width: 160px;
+    height: 51px;
+    border-radius: 5px;
+    background: #1abc9c;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+}
+
