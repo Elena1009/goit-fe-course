@@ -140,11 +140,12 @@ h2{
 
 .featured-list-item:hover .featured-list-name,
 .featured-list-item:focus .featured-list-name{
-    color: #1abc9c;
+    background-color: #1abc9c;
 }
 .featured-list-item:hover .featured-list-price,
 .featured-list-item:focus .featured-list-price{
-    color: #1abc9c;
+    /* background-color: #1abc9c; */
+    background: rgba(26,188,156, 0.5)
 }
 .featured-list-name{
     font-size: 18px;
@@ -197,20 +198,38 @@ h2{
 
 .blog-list-image{
    max-width: 100%;
+   height: 262px; 
 }
 .blog-list-title {
+    position: relative;
+    margin-bottom: 15px;
     color: #555252;
     font-size: 18px;
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
+.blog-line{
+    /* position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    display: block;
+    width: 136px;
+    height: 3px;
+    background: #1abc9c;
+}
 .blog-list-about {
+    margin-top: 28px;
+    margin-bottom: 16px;
     color: #555252;
     font-size: 14px;
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    text-align: left;
+    letter-spacing: -0.1px;
 }
 .blog-list-button{
     width: 160px;
